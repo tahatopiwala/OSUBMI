@@ -11,7 +11,7 @@ import Foundation
 typealias DOWNLOAD_COMPLETE = () -> ()
 
 // MARK :- SEGUE NAMES
-
+let SEGUE_TO_ONBOARD = "toOnboard"
 let SEGUE_TO_LOGIN = "toLogin"
 let SEGUE_TO_ELIGIBILITY = "toEligibility"
 let SEGUE_TO_CONSENT = "toConsent"
