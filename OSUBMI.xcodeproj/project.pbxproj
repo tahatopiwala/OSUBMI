@@ -14,6 +14,7 @@
 		0FACFA3A1CB4D0B900535F39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FACFA381CB4D0B900535F39 /* LaunchScreen.storyboard */; };
 		0FACFA4B1CB4D13000535F39 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FACFA481CB4D12700535F39 /* ResearchKit.framework */; };
 		0FACFA4C1CB4D13000535F39 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0FACFA481CB4D12700535F39 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0FACFA621CB4D4A600535F39 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACFA611CB4D4A600535F39 /* Constants.swift */; };
 		EF735DF0012E08AAF82BF794 /* Pods_OSUBMI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDE617A71780E6AFDB192F4 /* Pods_OSUBMI.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		0FACFA391CB4D0B900535F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FACFA3B1CB4D0B900535F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FACFA411CB4D12700535F39 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		0FACFA611CB4D4A600535F39 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3DDE617A71780E6AFDB192F4 /* Pods_OSUBMI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OSUBMI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C9F1BF397D48C6D800C83F /* Pods-OSUBMI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSUBMI.release.xcconfig"; path = "Pods/Target Support Files/Pods-OSUBMI/Pods-OSUBMI.release.xcconfig"; sourceTree = "<group>"; };
 		B779BD03AA5C4526E609BD2C /* Pods-OSUBMI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSUBMI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OSUBMI/Pods-OSUBMI.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +105,8 @@
 		0FACFA2E1CB4D0B900535F39 /* OSUBMI */ = {
 			isa = PBXGroup;
 			children = (
+				0FACFA611CB4D4A600535F39 /* Constants.swift */,
+				0FACFA5D1CB4D44F00535F39 /* Onboarding */,
 				0FACFA2F1CB4D0B900535F39 /* AppDelegate.swift */,
 				0FACFA5C1CB4D3A800535F39 /* Master */,
 				0FACFA331CB4D0B900535F39 /* Main.storyboard */,
@@ -169,6 +173,37 @@
 				0FACFA581CB4D36C00535F39 /* Master Controller */,
 			);
 			name = Master;
+			sourceTree = "<group>";
+		};
+		0FACFA5D1CB4D44F00535F39 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				0FACFA5F1CB4D48100535F39 /* Model */,
+				0FACFA601CB4D48600535F39 /* View */,
+				0FACFA5E1CB4D47B00535F39 /* Controller */,
+			);
+			name = Onboarding;
+			sourceTree = "<group>";
+		};
+		0FACFA5E1CB4D47B00535F39 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0FACFA5F1CB4D48100535F39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0FACFA601CB4D48600535F39 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		A2E22D65D60FDD2546A229D7 /* Pods */ = {
@@ -329,6 +364,7 @@
 			files = (
 				0FACFA321CB4D0B900535F39 /* ViewController.swift in Sources */,
 				0FACFA301CB4D0B900535F39 /* AppDelegate.swift in Sources */,
+				0FACFA621CB4D4A600535F39 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

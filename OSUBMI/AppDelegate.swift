@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AWSCore
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
