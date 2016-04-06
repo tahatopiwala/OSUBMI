@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import ResearchKit
 class ViewController: UIViewController {
 
     override func viewDidLoad() {

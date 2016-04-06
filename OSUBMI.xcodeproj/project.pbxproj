@@ -12,7 +12,47 @@
 		0FACFA351CB4D0B900535F39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FACFA331CB4D0B900535F39 /* Main.storyboard */; };
 		0FACFA371CB4D0B900535F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FACFA361CB4D0B900535F39 /* Assets.xcassets */; };
 		0FACFA3A1CB4D0B900535F39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FACFA381CB4D0B900535F39 /* LaunchScreen.storyboard */; };
+		0FACFA4B1CB4D13000535F39 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FACFA481CB4D12700535F39 /* ResearchKit.framework */; };
+		0FACFA4C1CB4D13000535F39 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0FACFA481CB4D12700535F39 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FACFA471CB4D12700535F39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FACFA411CB4D12700535F39 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		0FACFA491CB4D12700535F39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FACFA411CB4D12700535F39 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		0FACFA4D1CB4D13100535F39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FACFA411CB4D12700535F39 /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0FACFA4F1CB4D13100535F39 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0FACFA4C1CB4D13000535F39 /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0FACFA2C1CB4D0B900535F39 /* OSUBMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSUBMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +62,7 @@
 		0FACFA361CB4D0B900535F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FACFA391CB4D0B900535F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FACFA3B1CB4D0B900535F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FACFA411CB4D12700535F39 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FACFA4B1CB4D13000535F39 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +80,7 @@
 		0FACFA231CB4D0B900535F39 = {
 			isa = PBXGroup;
 			children = (
+				0FACFA411CB4D12700535F39 /* ResearchKit.xcodeproj */,
 				0FACFA2E1CB4D0B900535F39 /* OSUBMI */,
 				0FACFA2D1CB4D0B900535F39 /* Products */,
 			);
@@ -64,6 +107,15 @@
 			path = OSUBMI;
 			sourceTree = "<group>";
 		};
+		0FACFA421CB4D12700535F39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FACFA481CB4D12700535F39 /* ResearchKit.framework */,
+				0FACFA4A1CB4D12700535F39 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,10 +126,12 @@
 				0FACFA281CB4D0B900535F39 /* Sources */,
 				0FACFA291CB4D0B900535F39 /* Frameworks */,
 				0FACFA2A1CB4D0B900535F39 /* Resources */,
+				0FACFA4F1CB4D13100535F39 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0FACFA4E1CB4D13100535F39 /* PBXTargetDependency */,
 			);
 			name = OSUBMI;
 			productName = OSUBMI;
@@ -110,12 +164,35 @@
 			mainGroup = 0FACFA231CB4D0B900535F39;
 			productRefGroup = 0FACFA2D1CB4D0B900535F39 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0FACFA421CB4D12700535F39 /* Products */;
+					ProjectRef = 0FACFA411CB4D12700535F39 /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0FACFA2B1CB4D0B900535F39 /* OSUBMI */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0FACFA481CB4D12700535F39 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 0FACFA471CB4D12700535F39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0FACFA4A1CB4D12700535F39 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 0FACFA491CB4D12700535F39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0FACFA2A1CB4D0B900535F39 /* Resources */ = {
@@ -141,6 +218,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FACFA4E1CB4D13100535F39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 0FACFA4D1CB4D13100535F39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0FACFA331CB4D0B900535F39 /* Main.storyboard */ = {
@@ -251,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = OSUBMI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tahatopiwala.OSUBMI;
@@ -262,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = OSUBMI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tahatopiwala.OSUBMI;
@@ -288,6 +375,7 @@
 				0FACFA401CB4D0B900535F39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
