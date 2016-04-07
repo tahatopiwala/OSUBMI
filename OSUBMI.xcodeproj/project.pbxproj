@@ -15,8 +15,15 @@
 		0FACFA4C1CB4D13000535F39 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0FACFA481CB4D12700535F39 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0FACFA621CB4D4A600535F39 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACFA611CB4D4A600535F39 /* Constants.swift */; };
 		0FACFA641CB4D58F00535F39 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FACFA631CB4D58F00535F39 /* Onboarding.storyboard */; };
-		0FACFA6B1CB4DA5800535F39 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FACFA6A1CB4DA5800535F39 /* Profile.storyboard */; };
+		0FACFA6B1CB4DA5800535F39 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FACFA6A1CB4DA5800535F39 /* Account.storyboard */; };
 		0FACFA6D1CB4DAD600535F39 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACFA6C1CB4DAD600535F39 /* MasterViewController.swift */; };
+		0FACFA6F1CB4DF7100535F39 /* ConfigurationForAWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACFA6E1CB4DF7100535F39 /* ConfigurationForAWS.swift */; };
+		0FACFA731CB6067900535F39 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FACFA721CB6067900535F39 /* test.json */; };
+		0FACFA751CB606B800535F39 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACFA741CB606B800535F39 /* OnboardingVC.swift */; };
+		0FACFA7E1CB6213900535F39 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FACFA7D1CB6213900535F39 /* Profile.storyboard */; };
+		0FACFA801CB6213F00535F39 /* Study.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FACFA7F1CB6213F00535F39 /* Study.storyboard */; };
+		0FACFA821CB6214800535F39 /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FACFA811CB6214800535F39 /* Activity.storyboard */; };
+		0FACFA841CB6215100535F39 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FACFA831CB6215100535F39 /* Dashboard.storyboard */; };
 		EF735DF0012E08AAF82BF794 /* Pods_OSUBMI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDE617A71780E6AFDB192F4 /* Pods_OSUBMI.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,8 +75,15 @@
 		0FACFA411CB4D12700535F39 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
 		0FACFA611CB4D4A600535F39 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0FACFA631CB4D58F00535F39 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
-		0FACFA6A1CB4DA5800535F39 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		0FACFA6A1CB4DA5800535F39 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		0FACFA6C1CB4DAD600535F39 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		0FACFA6E1CB4DF7100535F39 /* ConfigurationForAWS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationForAWS.swift; sourceTree = "<group>"; };
+		0FACFA721CB6067900535F39 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		0FACFA741CB606B800535F39 /* OnboardingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		0FACFA7D1CB6213900535F39 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		0FACFA7F1CB6213F00535F39 /* Study.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Study.storyboard; sourceTree = "<group>"; };
+		0FACFA811CB6214800535F39 /* Activity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Activity.storyboard; sourceTree = "<group>"; };
+		0FACFA831CB6215100535F39 /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		3DDE617A71780E6AFDB192F4 /* Pods_OSUBMI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OSUBMI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C9F1BF397D48C6D800C83F /* Pods-OSUBMI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSUBMI.release.xcconfig"; path = "Pods/Target Support Files/Pods-OSUBMI/Pods-OSUBMI.release.xcconfig"; sourceTree = "<group>"; };
 		B779BD03AA5C4526E609BD2C /* Pods-OSUBMI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSUBMI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OSUBMI/Pods-OSUBMI.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +107,7 @@
 			children = (
 				0FACFA511CB4D26600535F39 /* Frameworks */,
 				0FACFA2E1CB4D0B900535F39 /* OSUBMI */,
+				0FACFA721CB6067900535F39 /* test.json */,
 				0FACFA2D1CB4D0B900535F39 /* Products */,
 				A2E22D65D60FDD2546A229D7 /* Pods */,
 			);
@@ -110,10 +125,11 @@
 			isa = PBXGroup;
 			children = (
 				0FACFA2F1CB4D0B900535F39 /* AppDelegate.swift */,
+				0FACFA6E1CB4DF7100535F39 /* ConfigurationForAWS.swift */,
 				0FACFA611CB4D4A600535F39 /* Constants.swift */,
-				0FACFA5D1CB4D44F00535F39 /* Onboarding */,
-				0FACFA651CB4D5E800535F39 /* Profile */,
 				0FACFA5C1CB4D3A800535F39 /* Master */,
+				0FACFA5D1CB4D44F00535F39 /* Onboarding */,
+				0FACFA651CB4D5E800535F39 /* Account */,
 				0FACFA5B1CB4D39100535F39 /* Application Properties */,
 			);
 			path = OSUBMI;
@@ -194,6 +210,7 @@
 		0FACFA5E1CB4D47B00535F39 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0FACFA741CB606B800535F39 /* OnboardingVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -212,15 +229,16 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		0FACFA651CB4D5E800535F39 /* Profile */ = {
+		0FACFA651CB4D5E800535F39 /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				0FACFA6A1CB4DA5800535F39 /* Profile.storyboard */,
-				0FACFA691CB4D61100535F39 /* Controller */,
-				0FACFA671CB4D5F800535F39 /* View */,
-				0FACFA661CB4D5F100535F39 /* Model */,
+				0FACFA891CB6217E00535F39 /* Master */,
+				0FACFA881CB6217300535F39 /* Dashboard */,
+				0FACFA871CB6216A00535F39 /* Activity */,
+				0FACFA861CB6216500535F39 /* Study */,
+				0FACFA851CB6215E00535F39 /* Profile */,
 			);
-			name = Profile;
+			name = Account;
 			sourceTree = "<group>";
 		};
 		0FACFA661CB4D5F100535F39 /* Model */ = {
@@ -242,6 +260,145 @@
 			children = (
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		0FACFA851CB6215E00535F39 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				0FACFA951CB6251200535F39 /* View */,
+				0FACFA941CB6250E00535F39 /* Model */,
+				0FACFA931CB6250900535F39 /* Controller */,
+				0FACFA7D1CB6213900535F39 /* Profile.storyboard */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		0FACFA861CB6216500535F39 /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				0FACFA921CB6250500535F39 /* View */,
+				0FACFA911CB6250000535F39 /* Model */,
+				0FACFA901CB624FA00535F39 /* Controller */,
+				0FACFA7F1CB6213F00535F39 /* Study.storyboard */,
+			);
+			name = Study;
+			sourceTree = "<group>";
+		};
+		0FACFA871CB6216A00535F39 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				0FACFA8F1CB624F200535F39 /* Model */,
+				0FACFA8E1CB624ED00535F39 /* View */,
+				0FACFA8D1CB624E700535F39 /* Controller */,
+				0FACFA811CB6214800535F39 /* Activity.storyboard */,
+			);
+			name = Activity;
+			sourceTree = "<group>";
+		};
+		0FACFA881CB6217300535F39 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				0FACFA8C1CB624E200535F39 /* Model */,
+				0FACFA8B1CB624DE00535F39 /* VIew */,
+				0FACFA8A1CB624D800535F39 /* Controller */,
+				0FACFA831CB6215100535F39 /* Dashboard.storyboard */,
+			);
+			name = Dashboard;
+			sourceTree = "<group>";
+		};
+		0FACFA891CB6217E00535F39 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				0FACFA6A1CB4DA5800535F39 /* Account.storyboard */,
+				0FACFA691CB4D61100535F39 /* Controller */,
+				0FACFA671CB4D5F800535F39 /* View */,
+				0FACFA661CB4D5F100535F39 /* Model */,
+			);
+			name = Master;
+			sourceTree = "<group>";
+		};
+		0FACFA8A1CB624D800535F39 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0FACFA8B1CB624DE00535F39 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = VIew;
+			sourceTree = "<group>";
+		};
+		0FACFA8C1CB624E200535F39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0FACFA8D1CB624E700535F39 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0FACFA8E1CB624ED00535F39 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0FACFA8F1CB624F200535F39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0FACFA901CB624FA00535F39 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0FACFA911CB6250000535F39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0FACFA921CB6250500535F39 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0FACFA931CB6250900535F39 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0FACFA941CB6250E00535F39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0FACFA951CB6251200535F39 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		A2E22D65D60FDD2546A229D7 /* Pods */ = {
@@ -339,11 +496,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FACFA801CB6213F00535F39 /* Study.storyboard in Resources */,
+				0FACFA841CB6215100535F39 /* Dashboard.storyboard in Resources */,
+				0FACFA821CB6214800535F39 /* Activity.storyboard in Resources */,
 				0FACFA3A1CB4D0B900535F39 /* LaunchScreen.storyboard in Resources */,
 				0FACFA371CB4D0B900535F39 /* Assets.xcassets in Resources */,
-				0FACFA6B1CB4DA5800535F39 /* Profile.storyboard in Resources */,
+				0FACFA6B1CB4DA5800535F39 /* Account.storyboard in Resources */,
 				0FACFA351CB4D0B900535F39 /* Main.storyboard in Resources */,
 				0FACFA641CB4D58F00535F39 /* Onboarding.storyboard in Resources */,
+				0FACFA7E1CB6213900535F39 /* Profile.storyboard in Resources */,
+				0FACFA731CB6067900535F39 /* test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +566,8 @@
 			files = (
 				0FACFA6D1CB4DAD600535F39 /* MasterViewController.swift in Sources */,
 				0FACFA301CB4D0B900535F39 /* AppDelegate.swift in Sources */,
+				0FACFA751CB606B800535F39 /* OnboardingVC.swift in Sources */,
+				0FACFA6F1CB4DF7100535F39 /* ConfigurationForAWS.swift in Sources */,
 				0FACFA621CB4D4A600535F39 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,6 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        configureCognitoPool() // Adds the configuration to AWSCognito
+        
+//        let types = UIUserNotificationType.Alert
+//        let mysettings = UIUserNotificationSettings(forTypes: types, categories: nil)
+//        UIApplication.sharedApplication().registerUserNotificationSettings(mysettings)
+        
+        
         return true
     }
 
@@ -41,7 +49,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        // Called when the application has recieved an scheduled Local Notification
+    }
 
+    func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
+        // Method called Async once the application has set the setting for the Notifcation
+    }
+    
+    
 
 }
 
