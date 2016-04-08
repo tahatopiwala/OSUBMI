@@ -479,7 +479,6 @@
 				TargetAttributes = {
 					0FACFA2B1CB4D0B900535F39 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = DEKLKBGS66;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 1;
@@ -737,6 +736,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = OSUBMI/OSUBMI.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = OSUBMI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -751,6 +751,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = OSUBMI/OSUBMI.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = OSUBMI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
