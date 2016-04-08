@@ -7,14 +7,49 @@
 //
 
 import UIKit
+import HealthKit
 
 class OnboardingVC: UIViewController {
 
+    
+    let healthStore = HKHealthStore()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        loadJSON()
+        preparingHealthKit()
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = true
+    }
+    
+    func preparingHealthKit(){
+    
+        if HKHealthStore.isHealthDataAvailable(){
+            print("Health data is there")
+            let readData = self.readHealthDataPermission()
+            healthStore.requestAuthorizationToShareTypes(nil, readTypes: readData, completion: { (success, error) in
+                if !success {
+                    print("There seems to be an error in reading your Health Data.")
+                }
+            })
+        }else{
+            print("There is no health data available.")
+        }
+    
+    }
+    
+    func readHealthDataPermission() -> Set<HKSampleType> {
+        var set = Set<HKSampleType>()
+        let height = HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeight)
+        let weight = HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierBodyMass)
+        set.insert(weight!)
+        set.insert(height!)
+        return set
     }
     
     func loadJSON(){
@@ -25,7 +60,7 @@ class OnboardingVC: UIViewController {
                 let object = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
                 if let dic = object as? Dictionary<String, AnyObject>{
                     guard let _ = dic["questions"], let _ = dic["logo_name"] else { return }
-                    print(dic)
+                    
                 }
                 
             }catch{
@@ -34,21 +69,14 @@ class OnboardingVC: UIViewController {
         }
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func toAccountCreate(sender: AnyObject) {
+        let viewController = UIStoryboard(name: "Onboarding", bundle: nil).instantiateViewControllerWithIdentifier(STORYBOARD_ID_CREATEACCOUNT)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func toElgibilityAndConsent(sender: AnyObject) {
+        let viewController = UIStoryboard(name: "Onboarding", bundle: nil).instantiateViewControllerWithIdentifier(STORYBOARD_ID_ELIGIBILITY)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
-    */
 
 }

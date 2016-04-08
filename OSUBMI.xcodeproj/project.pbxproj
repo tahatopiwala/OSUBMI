@@ -24,6 +24,13 @@
 		0FACFA801CB6213F00535F39 /* Study.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FACFA7F1CB6213F00535F39 /* Study.storyboard */; };
 		0FACFA821CB6214800535F39 /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FACFA811CB6214800535F39 /* Activity.storyboard */; };
 		0FACFA841CB6215100535F39 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FACFA831CB6215100535F39 /* Dashboard.storyboard */; };
+		0FACFA971CB6294700535F39 /* EligibilityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACFA961CB6294700535F39 /* EligibilityVC.swift */; };
+		0FACFA991CB62ED400535F39 /* Eligibility_Material_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACFA981CB62ED400535F39 /* Eligibility_Material_Button.swift */; };
+		0FACFA9D1CB63B3E00535F39 /* PresentingConsentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACFA9C1CB63B3E00535F39 /* PresentingConsentVC.swift */; };
+		0FACFA9F1CB63DC200535F39 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACFA9E1CB63DC200535F39 /* ConsentDocument.swift */; };
+		0FACFAA11CB63DCC00535F39 /* Consent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACFAA01CB63DCC00535F39 /* Consent.swift */; };
+		0FACFAF71CB7626000535F39 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FACFAF61CB7626000535F39 /* HealthKit.framework */; };
+		0FC242FA1CB76E210031BE0C /* AccountCreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC242F91CB76E210031BE0C /* AccountCreateVC.swift */; };
 		EF735DF0012E08AAF82BF794 /* Pods_OSUBMI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDE617A71780E6AFDB192F4 /* Pods_OSUBMI.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +91,14 @@
 		0FACFA7F1CB6213F00535F39 /* Study.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Study.storyboard; sourceTree = "<group>"; };
 		0FACFA811CB6214800535F39 /* Activity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Activity.storyboard; sourceTree = "<group>"; };
 		0FACFA831CB6215100535F39 /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		0FACFA961CB6294700535F39 /* EligibilityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EligibilityVC.swift; sourceTree = "<group>"; };
+		0FACFA981CB62ED400535F39 /* Eligibility_Material_Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eligibility_Material_Button.swift; sourceTree = "<group>"; };
+		0FACFA9C1CB63B3E00535F39 /* PresentingConsentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentingConsentVC.swift; sourceTree = "<group>"; };
+		0FACFA9E1CB63DC200535F39 /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
+		0FACFAA01CB63DCC00535F39 /* Consent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consent.swift; sourceTree = "<group>"; };
+		0FACFAF51CB7626000535F39 /* OSUBMI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = OSUBMI.entitlements; sourceTree = "<group>"; };
+		0FACFAF61CB7626000535F39 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		0FC242F91CB76E210031BE0C /* AccountCreateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCreateVC.swift; sourceTree = "<group>"; };
 		3DDE617A71780E6AFDB192F4 /* Pods_OSUBMI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OSUBMI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C9F1BF397D48C6D800C83F /* Pods-OSUBMI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSUBMI.release.xcconfig"; path = "Pods/Target Support Files/Pods-OSUBMI/Pods-OSUBMI.release.xcconfig"; sourceTree = "<group>"; };
 		B779BD03AA5C4526E609BD2C /* Pods-OSUBMI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSUBMI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OSUBMI/Pods-OSUBMI.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FACFAF71CB7626000535F39 /* HealthKit.framework in Frameworks */,
 				0FACFA4B1CB4D13000535F39 /* ResearchKit.framework in Frameworks */,
 				EF735DF0012E08AAF82BF794 /* Pods_OSUBMI.framework in Frameworks */,
 			);
@@ -124,6 +140,7 @@
 		0FACFA2E1CB4D0B900535F39 /* OSUBMI */ = {
 			isa = PBXGroup;
 			children = (
+				0FACFAF51CB7626000535F39 /* OSUBMI.entitlements */,
 				0FACFA2F1CB4D0B900535F39 /* AppDelegate.swift */,
 				0FACFA6E1CB4DF7100535F39 /* ConfigurationForAWS.swift */,
 				0FACFA611CB4D4A600535F39 /* Constants.swift */,
@@ -147,6 +164,7 @@
 		0FACFA511CB4D26600535F39 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0FACFAF61CB7626000535F39 /* HealthKit.framework */,
 				0FACFA411CB4D12700535F39 /* ResearchKit.xcodeproj */,
 				3DDE617A71780E6AFDB192F4 /* Pods_OSUBMI.framework */,
 			);
@@ -199,6 +217,7 @@
 		0FACFA5D1CB4D44F00535F39 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				0FACFAA21CB63FC900535F39 /* Consent */,
 				0FACFA631CB4D58F00535F39 /* Onboarding.storyboard */,
 				0FACFA5F1CB4D48100535F39 /* Model */,
 				0FACFA601CB4D48600535F39 /* View */,
@@ -210,6 +229,9 @@
 		0FACFA5E1CB4D47B00535F39 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0FC242F91CB76E210031BE0C /* AccountCreateVC.swift */,
+				0FACFA9C1CB63B3E00535F39 /* PresentingConsentVC.swift */,
+				0FACFA961CB6294700535F39 /* EligibilityVC.swift */,
 				0FACFA741CB606B800535F39 /* OnboardingVC.swift */,
 			);
 			name = Controller;
@@ -225,6 +247,7 @@
 		0FACFA601CB4D48600535F39 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0FACFA981CB62ED400535F39 /* Eligibility_Material_Button.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -401,6 +424,15 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		0FACFAA21CB63FC900535F39 /* Consent */ = {
+			isa = PBXGroup;
+			children = (
+				0FACFA9E1CB63DC200535F39 /* ConsentDocument.swift */,
+				0FACFAA01CB63DCC00535F39 /* Consent.swift */,
+			);
+			name = Consent;
+			sourceTree = "<group>";
+		};
 		A2E22D65D60FDD2546A229D7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -447,6 +479,12 @@
 				TargetAttributes = {
 					0FACFA2B1CB4D0B900535F39 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = DEKLKBGS66;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -565,9 +603,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FACFA6D1CB4DAD600535F39 /* MasterViewController.swift in Sources */,
+				0FACFA9F1CB63DC200535F39 /* ConsentDocument.swift in Sources */,
 				0FACFA301CB4D0B900535F39 /* AppDelegate.swift in Sources */,
+				0FACFA971CB6294700535F39 /* EligibilityVC.swift in Sources */,
+				0FACFA991CB62ED400535F39 /* Eligibility_Material_Button.swift in Sources */,
 				0FACFA751CB606B800535F39 /* OnboardingVC.swift in Sources */,
 				0FACFA6F1CB4DF7100535F39 /* ConfigurationForAWS.swift in Sources */,
+				0FACFA9D1CB63B3E00535F39 /* PresentingConsentVC.swift in Sources */,
+				0FACFAA11CB63DCC00535F39 /* Consent.swift in Sources */,
+				0FC242FA1CB76E210031BE0C /* AccountCreateVC.swift in Sources */,
 				0FACFA621CB4D4A600535F39 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -692,6 +736,7 @@
 			baseConfigurationReference = B779BD03AA5C4526E609BD2C /* Pods-OSUBMI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OSUBMI/OSUBMI.entitlements;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = OSUBMI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -705,6 +750,7 @@
 			baseConfigurationReference = 49C9F1BF397D48C6D800C83F /* Pods-OSUBMI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OSUBMI/OSUBMI.entitlements;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = OSUBMI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
