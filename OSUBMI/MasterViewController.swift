@@ -12,7 +12,7 @@ class MasterViewController: UIViewController {
     
     override func viewDidLoad() {
         dispatch_async(dispatch_get_main_queue()) { 
-            self.toOnboardController()
+            self.toAccount()
         }
     }
     

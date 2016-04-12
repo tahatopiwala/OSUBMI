@@ -1,29 +1,26 @@
 //
-//  AccountCreateVC.swift
+//  LicenseVC.swift
 //  OSUBMI
 //
-//  Created by Taha Topiwala on 4/8/16.
+//  Created by Taha Topiwala on 4/9/16.
 //  Copyright © 2016 Taha Topiwala. All rights reserved.
 //
 
 import UIKit
 
-class AccountCreateVC: UIViewController {
+class LicenseVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.navigationBarHidden = false
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func cancelAccountCreate(sender: AnyObject) {
-        self.navigationController?.popToRootViewControllerAnimated(true)
-    }
 
     /*
     // MARK: - Navigation

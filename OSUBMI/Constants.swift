@@ -39,3 +39,22 @@ let SEGUE_TO_PROFILE = "toProfile"
 let STORYBOARD_ID_ELIGIBILITY = "eligibility"
 let STORYBOARD_ID_CONSENT = "PresentingConsentVC"
 let STORYBOARD_ID_CREATEACCOUNT = "AccountCreateVC"
+let STORYBOARD_ID_LOGIN = "loginVC"
+let STORYBOARD_ID_REMINDER = "reminderVC"
+let STORYBOARD_ID_PERMISSION = "PermissionsTVC"
+let STORYBOARD_ID_CONSENTDISPLAY = "ConsentDisplayVC"
+let STORYBOARD_ID_PRIVARY = "PrivacyVC"
+let STORYBOARD_ID_LICENSE = "LicenseVC"
+let STORYBOARD_ID_LOG = "SleepVC"
+
+// MARK :- Cell ID's
+
+let REUSABLE_CELL_ID_PROFILE = "ProfileCell"
+let REUSABLE_CELL_ID_REMINDER = "ReminderCell"
+let REUSABLE_CELL_ID_PERMISSION = "PermissionCell"
+let REUSABLE_CELL_ID_PROFILE_SWITCH = "ProfileSwitchCell"
+
+// MARK :- Regex
+
+let EMAILREGEX = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+let PHONE_REGEX = "^\\d{3}-\\d{3}-\\d{4}$"
