@@ -32,6 +32,8 @@
 		0FACFAF71CB7626000535F39 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FACFAF61CB7626000535F39 /* HealthKit.framework */; };
 		0FC242FA1CB76E210031BE0C /* AccountCreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC242F91CB76E210031BE0C /* AccountCreateVC.swift */; };
 		EF735DF0012E08AAF82BF794 /* Pods_OSUBMI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDE617A71780E6AFDB192F4 /* Pods_OSUBMI.framework */; };
+		F75872681CB8DD5100881E96 /* StudyDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75872671CB8DD5100881E96 /* StudyDataSource.swift */; };
+		F7B0A5661CB8B0D700C9B400 /* StudyTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0A5651CB8B0D700C9B400 /* StudyTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		3DDE617A71780E6AFDB192F4 /* Pods_OSUBMI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OSUBMI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C9F1BF397D48C6D800C83F /* Pods-OSUBMI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSUBMI.release.xcconfig"; path = "Pods/Target Support Files/Pods-OSUBMI/Pods-OSUBMI.release.xcconfig"; sourceTree = "<group>"; };
 		B779BD03AA5C4526E609BD2C /* Pods-OSUBMI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSUBMI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OSUBMI/Pods-OSUBMI.debug.xcconfig"; sourceTree = "<group>"; };
+		F75872671CB8DD5100881E96 /* StudyDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudyDataSource.swift; sourceTree = "<group>"; };
+		F7B0A5651CB8B0D700C9B400 /* StudyTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudyTVC.swift; path = ../../../../Sagnik28/Desktop/OSUBMI/OSUBMI/StudyTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,6 +389,7 @@
 		0FACFA901CB624FA00535F39 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F7B0A5651CB8B0D700C9B400 /* StudyTVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -392,6 +397,7 @@
 		0FACFA911CB6250000535F39 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F75872671CB8DD5100881E96 /* StudyDataSource.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -612,6 +618,8 @@
 				0FACFAA11CB63DCC00535F39 /* Consent.swift in Sources */,
 				0FC242FA1CB76E210031BE0C /* AccountCreateVC.swift in Sources */,
 				0FACFA621CB4D4A600535F39 /* Constants.swift in Sources */,
+				F7B0A5661CB8B0D700C9B400 /* StudyTVC.swift in Sources */,
+				F75872681CB8DD5100881E96 /* StudyDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
